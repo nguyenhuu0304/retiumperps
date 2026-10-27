@@ -1,0 +1,8 @@
+[package]
+name = "retium_perps_vault_ledger_model"
+version = "0.6.0"
+edition = "2021"
+description = "Offline liability and margin invariant model; no chain I/O or actual vault"
+
+[lib]
+crate-type = ["rlib"]

@@ -1,0 +1,19 @@
+[package]
+name = "retium_perps_engine_preview"
+version = "0.3.0"
+edition = "2021"
+description = "Retium Perps Phase C: isolated stateful positions sandbox, NO actual asset settlement"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+retium-contract = { git = "https://github.com/Retium-Org/retium-sdk", rev = "09f27815" }
+retium_perps_risk_core = { path = "../trading-engine" }
+
+[profile.release]
+opt-level = "z"
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = true

@@ -1,0 +1,8 @@
+[package]
+name = "retium_perps_oracle_guard"
+version = "0.4.0"
+edition = "2021"
+description = "No-std deterministic quote policy; NOT an authenticated oracle or deployed contract"
+
+[lib]
+crate-type = ["rlib"]

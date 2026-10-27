@@ -1,0 +1,15 @@
+{
+  "name": "retium-perps-custody-testnet",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/metadata.mjs && asc assembly/index.ts --config asconfig.json --target release",
+    "test": "node --test tests/runtime.test.mjs"
+  },
+  "devDependencies": {
+    "assemblyscript": "0.28.20",
+    "as-bignum": "0.3.1",
+    "assemblyscript-json": "1.1.0"
+  }
+}

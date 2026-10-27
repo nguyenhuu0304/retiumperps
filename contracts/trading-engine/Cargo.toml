@@ -1,0 +1,10 @@
+[package]
+name = "retium_perps_risk_core"
+version = "0.3.0"
+edition = "2021"
+description = "Standalone test-only Rust risk math for Retium Perps; no custody, transactions or chain bindings"
+
+[lib]
+crate-type = ["rlib"]
+
+[dependencies]
